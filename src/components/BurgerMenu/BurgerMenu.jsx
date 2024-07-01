@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Modal } from 'components/Modal/Modal';
-import { BurgerButton, ModalContent } from './BurgerMenu.styled';
+import { BurgerButton, BurgerSvg, BurgerSvgWrapper, ModalContent } from './BurgerMenu.styled';
+import sprite from '../../img/sprite.svg';
+
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,11 @@ export const BurgerMenu = () => {
   return (
     <>
       <BurgerButton onClick={toggleModal}>
-        ☰
+        <BurgerSvgWrapper>
+          <BurgerSvg>
+            <use href={`${sprite}#icon-menu`} />
+          </BurgerSvg>
+        </BurgerSvgWrapper>
       </BurgerButton>
       {isOpen && (
         <Modal>

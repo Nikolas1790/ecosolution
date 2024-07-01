@@ -1,11 +1,9 @@
-import { ModalOverlay, ModalWrapper } from './Modal.styled';
+import { ModalOverlay } from './Modal.styled';
 
 export const Modal = ({ children }) => {
   return (
     <ModalOverlay>
-      <ModalWrapper>
-        {children}
-      </ModalWrapper>
+      {children}
     </ModalOverlay>
   );
 };
