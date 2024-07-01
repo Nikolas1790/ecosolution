@@ -1,4 +1,5 @@
 import { About } from "./About/About";
+import { DataContainer, MainContainer } from "./App.styled";
 import { Cases } from "./Cases/Cases";
 import { ContactUs } from "./ContactUs/ContactUs";
 import { Electricity } from "./Electricity/Electricity";
@@ -9,15 +10,17 @@ import { Main } from "./Main/Main";
 
 export const App = () => {
   return (
-    <div >
-      <Header />
-      <Main />
-      <About />
-      <Electricity />
-      <Cases />
-      <FAQ />
-      <ContactUs />
-      <Footer />
-  </div>
+    <MainContainer >
+      <DataContainer>
+        <Header />
+        <Main />
+        <About />
+        <Electricity />
+        <Cases />
+        <FAQ />
+        <ContactUs />
+        <Footer />
+      </DataContainer>
+    </MainContainer>
   );
 };
