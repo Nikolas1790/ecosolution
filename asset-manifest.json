@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/ecosolution/static/css/main.b90046ee.css",
-    "main.js": "/ecosolution/static/js/main.df7911d5.js",
+    "main.css": "/ecosolution/static/css/main.7acaea2f.css",
+    "main.js": "/ecosolution/static/js/main.dbd79f10.js",
+    "static/media/FiraSans.woff2": "/ecosolution/static/media/FiraSans.561754398b82093a6f62.woff2",
+    "static/media/FiraSans.woff": "/ecosolution/static/media/FiraSans.05ef57660204e8f5a783.woff",
+    "static/media/Oswald-Bold.woff": "/ecosolution/static/media/Oswald-Bold.6f8a79584e196ebbb3e4.woff",
+    "static/media/Oswald-Regular.woff": "/ecosolution/static/media/Oswald-Regular.7f8da1cd05f2191785fd.woff",
+    "static/media/Oswald-Bold.woff2": "/ecosolution/static/media/Oswald-Bold.3e65c74aad6652f9bcb7.woff2",
+    "static/media/Oswald-Regular.woff2": "/ecosolution/static/media/Oswald-Regular.df70d361e888b20feb8d.woff2",
+    "static/media/main-mob.jpg": "/ecosolution/static/media/main-mob.585162c250a6aaa24577.jpg",
     "static/media/sprite.svg": "/ecosolution/static/media/sprite.c743f107d945101d06d510d9a86f5736.svg",
     "index.html": "/ecosolution/index.html",
-    "main.b90046ee.css.map": "/ecosolution/static/css/main.b90046ee.css.map",
-    "main.df7911d5.js.map": "/ecosolution/static/js/main.df7911d5.js.map"
+    "main.7acaea2f.css.map": "/ecosolution/static/css/main.7acaea2f.css.map",
+    "main.dbd79f10.js.map": "/ecosolution/static/js/main.dbd79f10.js.map"
   },
   "entrypoints": [
-    "static/css/main.b90046ee.css",
-    "static/js/main.df7911d5.js"
+    "static/css/main.7acaea2f.css",
+    "static/js/main.dbd79f10.js"
   ]
 }
