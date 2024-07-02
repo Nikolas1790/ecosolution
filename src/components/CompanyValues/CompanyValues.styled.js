@@ -34,3 +34,11 @@ font-weight: 400;
   /* letter-spacing: 0px; */
   text-transform: uppercase;
 `;
+
+export const ContentText = styled.p`
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: justify;
+  /* letter-spacing: 0px; */
+  /* text-transform: uppercase; */
+`;

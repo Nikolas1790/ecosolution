@@ -10,19 +10,19 @@ export const MainSection = styled.section`
 `;
 
 export const MainTitle = styled.h2`
-/* font-family: Oswald; */
+
   font-size: 36px;
   font-weight: 400;
 line-height: 1;
-letter-spacing: -3px;
+letter-spacing: 0;
 /* margin-bottom: 24px; */
 `;
 
 export const MainText = styled.p`
   font-size: 16px;
 font-weight: 400;
-line-height: 1.18;
-letter-spacing: -0.45px;
+line-height: 1.19;
+letter-spacing: -0.63px;
 text-align: justify;
 `;
 
