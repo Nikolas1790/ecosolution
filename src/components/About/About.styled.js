@@ -21,3 +21,18 @@ export const AboutAddressBlock = styled.div`
 export const AboutAddress = styled.p`
   letter-spacing: -0.64px;
 `;
+
+
+export const AboutTitle = styled.h3`
+/* font-family: 'Oswald', sans-serif; */
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+  /* letter-spacing: 0px; */
+  text-transform: uppercase;
+`;
+
+export const AboutText = styled.p`
+letter-spacing: -0.44px;
+text-align: justify;
+`;

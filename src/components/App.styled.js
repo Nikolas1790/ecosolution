@@ -16,6 +16,6 @@ export const DataContainer = styled.div`
   box-sizing: border-box;
   color: rgb(23, 61, 51);
   /* font-family: Fira Sans; */
-  font-size: 16px;
-  font-weight: 400;
+  /* font-size: 16px; */
+  /* font-weight: 400; */
 `;
