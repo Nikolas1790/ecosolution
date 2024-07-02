@@ -1,33 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, styled } from 'styled-components';
 import color from './GlobalColors';
 
-import FiraSansWoff from '../fonts/FiraSans.woff';
-import FiraSansWoff2 from '../fonts/FiraSans.woff2';
-import OswaldBoldRegularWoff from '../fonts/Oswald-Regular.woff';
-import OswaldBoldRegularWoff2 from '../fonts/Oswald-Regular.woff2';
-import OswaldBoldBoldWoff from '../fonts/Oswald-Bold.woff';
-import OswaldBoldBoldWoff2 from '../fonts/Oswald-Bold.woff2';
 
 export const GlobalStyle = createGlobalStyle`
-@font-face {
-  font-family: 'FiraSans';
-  font-style: normal;
-  font-weight: 400; 
-  src: url(${FiraSansWoff2}) format('woff2'), url(${FiraSansWoff}) format('woff');
-}
-@font-face {
-  font-family: 'Oswald-Bold';
-  font-style: normal;
-  font-weight: 400; 
-  src: url(${OswaldBoldRegularWoff2}) format('woff2'), url(${OswaldBoldRegularWoff}) format('woff');
-}
-@font-face {
-  font-family: 'Oswald-Bold';
-  font-style: normal;
-  font-weight: 700; 
-  src: url(${OswaldBoldBoldWoff2}) format('woff2'), url(${OswaldBoldBoldWoff}) format('woff');
-}
-
 
 *,
 *::before,
@@ -58,9 +33,13 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: 'Fira Sans', sans-serif;
   margin: 0;
 }
 a {
@@ -99,4 +78,13 @@ html {
 .no-scroll {
   overflow: hidden;
 }
+`;
+
+
+
+export const HorizontalLine = styled.div`
+  width: 100%;
+  height: 1px;
+  background: rgb(151, 210, 139);
+
 `;

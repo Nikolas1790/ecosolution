@@ -1,48 +1,59 @@
+import { HorizontalLine } from 'common/GiobalStyles';
 import sprite from '../../img/sprite.svg';
-import { HorizontalLine } from "components/Main/Main.styled";
-import { GridContainer, GridItem, ContentWrapper } from "./CompanyValues.styled";
+import { GridContainer, GridItem, ContentWrapper, ContentTitle } from "./CompanyValues.styled";
+
+
 export const CompanyValues = () => {
   return (
     <GridContainer>
       <GridItem>
+        <div>
         <ContentWrapper>
-          <svg width={32} height={32}>
-            <use href={`${sprite}#icon-arrow-right`} />
+          <svg width={16} height={16}>
+            <use href={`${sprite}#icon-cpu-charge`} />
           </svg>
-          <h4>Openness</h4>
+          <ContentTitle>Openness</ContentTitle>
         </ContentWrapper>
+        
         <HorizontalLine />
+        </div>
         <p>to the world, people, new ideas and projects</p>
       </GridItem>
       <GridItem>
+      <div>
         <ContentWrapper>
-          <svg width={32} height={32}>
-            <use href={`${sprite}#icon-arrow-right`} />
+          <svg width={16} height={16}>
+            <use href={`${sprite}#icon-global-edit`} />
           </svg>
-          <h4>Openness</h4>
+          <ContentTitle>Responsibility</ContentTitle>
         </ContentWrapper>
         <HorizontalLine />
-        <p>to the world, people, new ideas and projects</p>
+        </div>
+        <p>we are aware that the results of our work have an impact on our lives and the lives of future generations</p>
       </GridItem>
       <GridItem>
+      <div>
         <ContentWrapper>
-          <svg width={32} height={32}>
-            <use href={`${sprite}#icon-arrow-right`} />
+          <svg width={16} height={16}>
+            <use href={`${sprite}#icon-cpu-charge-s`} />
           </svg>
-          <h4>Openness</h4>
+          <ContentTitle>Innovation</ContentTitle>
         </ContentWrapper>
         <HorizontalLine />
-        <p>to the world, people, new ideas and projects</p>
+        </div>
+        <p>we use the latest technology to implement non-standard solutions</p>
       </GridItem>
       <GridItem>
+      <div>
         <ContentWrapper>
-          <svg width={32} height={32}>
-            <use href={`${sprite}#icon-arrow-right`} />
+          <svg width={16} height={16}>
+            <use href={`${sprite}#icon-ranking`} />
           </svg>
-          <h4>Openness</h4>
+          <ContentTitle>Quality</ContentTitle>
         </ContentWrapper>
         <HorizontalLine />
-        <p>to the world, people, new ideas and projects</p>
+        </div>
+        <p>we do not strive to be the first among others, but we want to be the best in our business</p>
       </GridItem>
     </GridContainer>
   );
