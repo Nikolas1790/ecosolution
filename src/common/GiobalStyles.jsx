@@ -3,6 +3,9 @@ import color from './GlobalColors';
 
 
 export const GlobalStyle = createGlobalStyle`
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 @font-face {
     font-family: 'All Round Gothic Thick';
     src: url('/path/to/fonts/FONTSPRING_DEMO-AllRoundGothicThick.ttf') format('truetype');
@@ -98,6 +101,15 @@ html {
 export const HorizontalLine = styled.div`
   width: 100%;
   height: 1px;
-  background: rgb(151, 210, 139);
+  background: ${color.greenLight};
 
+`;
+
+export const TitleSection = styled.h2`
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  width: 264px;
 `;

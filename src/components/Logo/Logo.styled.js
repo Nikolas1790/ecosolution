@@ -7,7 +7,7 @@ export const LogoContainer = styled.div`
   gap: 6px;
 
   &:hover h2 {
-    color: ${color.greyLightHover};
+    color: ${color.greenLight};
   }
 `;
 
@@ -41,5 +41,5 @@ export const MainText = styled.p`
 `;
 
 export const MainTextSpan = styled.span`
- color: ${color.greyLightHover};
+ color: ${color.greenLight};
 `;

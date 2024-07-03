@@ -9,13 +9,13 @@ export const MainSection = styled.section`
   padding-top: 130px;
 `;
 
-export const MainTitle = styled.h2`
+export const MainTitle = styled.h1`
 
   font-size: 36px;
   font-weight: 400;
-line-height: 1;
-letter-spacing: 0;
-/* margin-bottom: 24px; */
+  line-height: 1;
+  letter-spacing: 0;
+  /* margin-bottom: 24px; */
 `;
 
 export const MainText = styled.p`
