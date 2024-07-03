@@ -3,6 +3,19 @@ import color from './GlobalColors';
 
 
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+    font-family: 'All Round Gothic Thick';
+    src: url('/path/to/fonts/FONTSPRING_DEMO-AllRoundGothicThick.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CA Saygon Text';
+    src: url('/path/to/fonts/CA_Saygon_Text-Regular.ttf') format('truetype'); /* замените путь на актуальный путь к файлу шрифта */
+    font-weight: 400;
+    font-style: normal;
+}
 
 *,
 *::before,

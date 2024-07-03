@@ -1,7 +1,10 @@
+import { ElectricityContainer } from "./Electricity.styled";
+
 export const Electricity = () => {
   return (
-    <div >
+    <ElectricityContainer >
+      
       Electricity
-  </div>
+    </ElectricityContainer>
   );
 };

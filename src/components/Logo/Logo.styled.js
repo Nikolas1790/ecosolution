@@ -1,22 +1,24 @@
+import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 
   &:hover h2 {
-    color: rgb(151, 210, 139);
+    color: ${color.greyLightHover};
   }
 `;
 
 export const LogoSvg = styled.svg`
   width: 31px;
   height: 18px;
-  padding-top: 8px; 
+  transform: translateY(1px); /* Опускает SVG на 5 пикселей вниз */
 `;
 
 export const MainTitle = styled.h2`
+font-family: 'All Round Gothic Thick', sans-serif;
   font-size: 33px;
   font-weight: 500;
   line-height: 1.21;
@@ -27,6 +29,7 @@ export const MainTitle = styled.h2`
 `;
 
 export const MainText = styled.p`
+  font-family: 'CA Saygon Text', sans-serif;
   width: 60px;
   font-size: 10px;
   line-height: 0.9;
@@ -34,9 +37,9 @@ export const MainText = styled.p`
   margin: 0;
 
 
-  padding-top: 10px; 
+  padding-top: 6px; 
 `;
 
 export const MainTextSpan = styled.span`
- color: rgb(151, 210, 139);
+ color: ${color.greyLightHover};
 `;
