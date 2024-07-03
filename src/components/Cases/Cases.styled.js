@@ -1,4 +1,6 @@
+import color from 'common/GlobalColors';
 import styled from 'styled-components';
+
 
 export const CasesSection = styled.section`
   display: flex;
@@ -11,23 +13,37 @@ export const CasesSection = styled.section`
 export const UpperBlock = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  margin-bottom: 19px;
 `;
 
-export const SlideInfo = styled.div`
-  font-size: 16px;
+export const SlideInfo = styled.p`
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.21;
+  letter-spacing: -1.12px;
+  color: ${color.greenPrimary};
+`;
+
+export const SlideInfoSpan = styled.span`
+  color: ${color.greenPrimaryQuarterTransparency};
 `;
 
 export const NavButtons = styled.div`
   display: flex;
-  gap: 8px;
+  gap: 12px;
 `;
 
 export const Button = styled.button`
   background: none;
-  border: 1px solid #000;
-  padding: 8px;
   cursor: pointer;
+  fill: transparent;
+  stroke: ${color.greenPrimary};
+
+  transition: stroke 0.3s linear;
+  &:hover {
+    stroke: ${color.greenLight}; /* Например, измените цвет фона на ваш выбор */
+  }
 `;
 
 export const SliderWrapper = styled.div`
@@ -46,4 +62,5 @@ export const Card = styled.div`
   align-items: center;
   background: #f0f0f0;
   border: 1px solid #ccc;
+  flex-shrink: 0; /* Предотвращение сжатия карточек */
 `;
