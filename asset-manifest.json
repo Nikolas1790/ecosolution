@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.2e34b08b.css",
-    "main.js": "/ecosolution/static/js/main.654487b5.js",
+    "main.js": "/ecosolution/static/js/main.b71c6bbb.js",
     "static/media/Private-Enterprise-“ZAKHIDNYI BUH”.jpg": "/ecosolution/static/media/Private-Enterprise-“ZAKHIDNYI BUH”.ffe7109a6b1fc86b2703.jpg",
     "static/media/sprite.svg": "/ecosolution/static/media/sprite.2ff3709ff3a7450f161fb9fdf1f9fd89.svg",
     "static/media/main-mob.jpg": "/ecosolution/static/media/main-mob.585162c250a6aaa24577.jpg",
@@ -11,10 +11,10 @@
     "static/media/slick.woff": "/ecosolution/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ecosolution/index.html",
     "main.2e34b08b.css.map": "/ecosolution/static/css/main.2e34b08b.css.map",
-    "main.654487b5.js.map": "/ecosolution/static/js/main.654487b5.js.map"
+    "main.b71c6bbb.js.map": "/ecosolution/static/js/main.b71c6bbb.js.map"
   },
   "entrypoints": [
     "static/css/main.2e34b08b.css",
-    "static/js/main.654487b5.js"
+    "static/js/main.b71c6bbb.js"
   ]
 }
