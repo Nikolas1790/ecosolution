@@ -69,6 +69,7 @@ export const CardTitle = styled.h4`
   line-height: 1.22;
   letter-spacing: -0.72px;
   width: 175px;
+  height: 66px;
 `;
 
 
@@ -82,5 +83,5 @@ export const CardSignature = styled.div`
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: -0.48px;
-  margin-top: 12px;
+  margin-top: 14px;
 `;
