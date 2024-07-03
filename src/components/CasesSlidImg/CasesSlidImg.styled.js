@@ -9,7 +9,20 @@ export const SliderWrapper = styled.div`
     align-items: center;
   }
 `;
+export const CardSvgBlock = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  background: ${color.greenLight };
 
+  stroke: ${color.greenPrimary}; 
+  fill: transparent;
+
+  transition: background 0.3s, stroke 0.3s; /* Добавьте переход к svg-блоку */
+`; 
 export const Card = styled.div`
   width: 320px;
   height: 318px;
@@ -19,6 +32,20 @@ export const Card = styled.div`
   background: ${color.greyLight};
   /* border: 1px solid #ccc; */
   flex-shrink: 0; /* Предотвращение сжатия карточек */
+
+  transition: all 0.3s;
+  &:hover {
+
+    ${CardSvgBlock} {
+      background: ${color.greenPrimary};
+    }
+
+    svg {
+      stroke: ${color.greenLight};
+
+      transition-delay: 0.2s; /* Добавьте задержку для stroke svg */
+    }
+  }
 `;
 
 
@@ -44,18 +71,7 @@ export const CardTitle = styled.h4`
   width: 175px;
 `;
 
-export const CardSvgBlock = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%; 
-  background: ${color.greenLight };
 
-  stroke: ${color.greenPrimary}; 
-  fill: transparent;
-`;
 
 export const CardSignature = styled.div`
   display: flex;
