@@ -46,21 +46,21 @@ export const Button = styled.button`
   }
 `;
 
-export const SliderWrapper = styled.div`
-  .slick-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-`;
+// export const SliderWrapper = styled.div`
+//   .slick-slide {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// `;
 
-export const Card = styled.div`
-  width: 300px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f0f0f0;
-  border: 1px solid #ccc;
-  flex-shrink: 0; /* Предотвращение сжатия карточек */
-`;
+// export const Card = styled.div`
+//   width: 320px;
+//   height: 318px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: ${color.greyLight};
+//   /* border: 1px solid #ccc; */
+//   flex-shrink: 0; /* Предотвращение сжатия карточек */
+// `;

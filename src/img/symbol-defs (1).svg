@@ -1,18 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.333" d="m12.759 7.905-8.093 8.093 8.093 8.093m14.573-8.092H4.892"/>
-    </symbol>
-    <symbol id="icon-arrow-left-l" viewBox="0 0 32 32">
+    <symbol id="icon-arrow-rifefeght" viewBox="0 0 32 32">
       <path stroke-width=".485" d="M16 .242C7.297.242.242 7.297.242 16S7.297 31.758 16 31.758 31.758 24.703 31.758 16 24.703.242 16 .242z"/>
       <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".727" d="M14.232 11.585 9.817 16l4.415 4.415m7.949-4.416H9.941"/>
     </symbol>
-    <symbol id="icon-arrow-right" viewBox="0 0 32 32">
-      <path stroke-width=".485" d="M16 .242C24.703.242 31.758 7.297 31.758 16S24.703 31.758 16 31.758.242 24.703.242 16 7.297.242 16 .242z"/>
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".727" d="M17.768 11.585 22.183 16l-4.415 4.415m-7.949-4.416h12.24"/>
-    </symbol>
-    <symbol id="icon-arrow-right-r" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.333" d="m12.759 7.905-8.093 8.093 8.093 8.093m14.573-8.092H4.892"/>
+    <symbol id="icon-arrow-right-top" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.714" d="M12.569 7.985h11.446v11.446M7.987 24.012 23.855 8.145"/>
     </symbol>
   </defs>
 </svg>
