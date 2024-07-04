@@ -38,7 +38,6 @@ body {
   line-height: 1.19;
   letter-spacing: -0.64px;
   color: ${color.greenPrimary};
-  /* background-color: ${color.mainBackground}; */
   width: 100%;
   height: 100vh;
   margin: 0;  
