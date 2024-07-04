@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
-import { ContactFormContainer, ContactFormField, ContactFormLabel, ErrorMessageFormField, ErrorText, FormFieldBlock, SuccessMessage } from './ContactForm.styled';
+import { ContactFormContainer, ContactFormField, ContactFormLabel, ErrorMessageFormField, ErrorText, FormFieldBlock } from './ContactForm.styled';
 import { toast } from 'react-toastify';
 import CuStomBtn from 'components/CustomBtn/CustomBtn';
 
