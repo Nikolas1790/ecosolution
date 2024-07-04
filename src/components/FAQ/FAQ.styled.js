@@ -1,4 +1,3 @@
-// import color from 'common/GlobalColors';
 import color from 'common/GlobalColors';
 import styled from 'styled-components';
 

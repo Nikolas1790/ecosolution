@@ -39,7 +39,7 @@ export const Cases = () => {
 
   return (
     <CasesSection >
-      <TitleSection>Successful cases of our company</TitleSection>
+      <TitleSection width='264px'>Successful cases of our company</TitleSection>
       <div>
         <UpperBlock>
           <SlideInfo>

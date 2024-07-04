@@ -110,5 +110,5 @@ export const TitleSection = styled.h2`
   line-height: 1;
   letter-spacing: 0px;
   text-transform: uppercase;
-  width: 264px;
+  width: ${({ width }) => width || 'auto'};
 `;
