@@ -56,8 +56,8 @@ export const ErrorText = styled.div`
   font-size: 12px;
 `;
 
-export const SuccessMessage = styled.div`
-  color: green;
-  font-size: 14px;
-  margin-top: 16px;
-`;
+// export const SuccessMessage = styled.div`
+//   color: green;
+//   font-size: 14px;
+//   margin-top: 16px;
+// `;

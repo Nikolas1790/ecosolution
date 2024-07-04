@@ -93,6 +93,10 @@ html {
 .no-scroll {
   overflow: hidden;
 }
+
+textarea {
+  resize: none; 
+} 
 `;
 
 
