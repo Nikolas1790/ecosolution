@@ -26,23 +26,23 @@ letter-spacing: -0.63px;
 text-align: justify;
 `;
 
-export const LearnMoreBtb = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  width: 141px;
-  height: 39px;
-  border: 1px solid rgb(151, 210, 139);
-  border-radius: 500px;
-  padding: 4px 4px 4px 16px;
+// export const LearnMoreBtb = styled.button`
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 12px;
+//   width: 141px;
+//   height: 39px;
+//   border: 1px solid rgb(151, 210, 139);
+//   border-radius: 500px;
+//   padding: 4px 4px 4px 16px;
 
-  transition: all 0.3s linear;
-  &:hover  {
-    color: rgb(151, 210, 139);
-    background: rgb(23, 61, 51)
-  }
-`;
+//   transition: all 0.3s linear;
+//   &:hover  {
+//     color: rgb(151, 210, 139);
+//     background: rgb(23, 61, 51)
+//   }
+// `;
 
 export const HorizontalLine = styled.div`
 

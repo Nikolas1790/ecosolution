@@ -1,55 +1,77 @@
 import React from 'react';
-import { Formik, Form,  ErrorMessage } from 'formik';
+import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
-import { ContactFormContainer, ContactFormField, ContactFormLabel, ContactFormButton, ErrorText, SuccessMessage } from './ContactForm.styled';
+import { ContactFormContainer, ContactFormField, ContactFormLabel, ErrorMessageFormField, ErrorText, FormFieldBlock, SuccessMessage } from './ContactForm.styled';
+import { toast } from 'react-toastify';
+import CuStomBtn from 'components/CustomBtn/CustomBtn';
 
-const ContactForm = () => {
+const initialValues = {
+  fullName: '',
+  email: '', 
+  phone: '', 
+  message: '' 
+};
+
+const schema = Yup.object({
+  fullName: Yup.string().required('Wrong Fullname'),
+  email: Yup.string().matches(/^\w+([.-]?\w+)*@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'Invalid email address').required('Wrong Email'),
+  phone: Yup.string().matches(/^\d{12}$/, 'Phone number must be exactly 12 digits').required('Wrong Phone'),
+  message: Yup.string(),
+});
+
+
+export const ContactForm = () => {
+  const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
+    try {
+      setTimeout(() => {
+        setStatus('Form submitted successfully');
+        setSubmitting(false);
+        
+        console.log(values)
+        toast.success('values')
+        resetForm();
+      }, 500);
+    } catch (error) {
+      toast.error("Registration failed. Please try again later.");
+    }
+  }
   return (
-<Formik
-      initialValues={{ fullName: '', email: '', phone: '', message: '' }}
-      validationSchema={Yup.object({
-        fullName: Yup.string().required('Full name is required'),
-        email: Yup.string().email('Invalid email address').required('E-mail is required'),
-        phone: Yup.string().required('Phone is required'),
-        message: Yup.string(),
-      })}
-      onSubmit={(values, { setSubmitting, resetForm, setStatus }) => {
-        setTimeout(() => {
-          setStatus('Form submitted successfully');
-          setSubmitting(false);
-          resetForm();
-        }, 500);
-      }}
+    <Formik
+      initialValues = {initialValues}
+      validationSchema={schema}
+      onSubmit={handleSubmit}
     >
-      {({ isSubmitting, status }) => (
+      {({ isSubmitting, status, errors, touched }) => (
         <Form>
           <ContactFormContainer>
-            <ContactFormLabel htmlFor="fullName">Full name</ContactFormLabel>
-            <ContactFormField id="fullName" name="fullName" type="text" />
-            <ErrorMessage name="fullName" component={ErrorText} />
+            <ContactFormLabel htmlFor="fullName">*Full name:</ContactFormLabel>
+            <FormFieldBlock>
+              <ContactFormField id="fullName" name="fullName" type="text" placeholder="John Rosie" error={errors.fullName && touched.fullName ? "true" : "" }  />
+              <ErrorMessageFormField name="fullName" component={ErrorText} />
+            </FormFieldBlock>
 
-            <ContactFormLabel htmlFor="email">E-mail</ContactFormLabel>
-            <ContactFormField id="email" name="email" type="email" />
-            <ErrorMessage name="email" component={ErrorText} />
+            <ContactFormLabel htmlFor="email">*E-mail:</ContactFormLabel>
+            <FormFieldBlock>
+              <ContactFormField id="email" name="email" type="email" placeholder="johnrosie@gmail.com" error={errors.email && touched.email ? "true" : "" } />
+              <ErrorMessageFormField name="email" component={ErrorText} />
+            </FormFieldBlock>
 
-            <ContactFormLabel htmlFor="phone">Phone</ContactFormLabel>
-            <ContactFormField id="phone" name="phone" type="text" />
-            <ErrorMessage name="phone" component={ErrorText} />
+            <ContactFormLabel htmlFor="phone">*Phone:</ContactFormLabel>
+            <FormFieldBlock>
+              <ContactFormField id="phone" name="phone" type="text" placeholder="380961234567" error={errors.phone && touched.phone ? "true" : "" } />
+              <ErrorMessageFormField name="phone" component={ErrorText} />
+            </FormFieldBlock>
 
             <ContactFormLabel htmlFor="message">Message</ContactFormLabel>
-            <ContactFormField id="message" name="message" as="textarea" />
-            <ErrorMessage name="message" component={ErrorText} />
+            <ContactFormField id="message" name="message" as="textarea" placeholder="My message...." error="" height='146px' />
+            
 
-            <ContactFormButton type="submit" disabled={isSubmitting}>
-              Submit
-            </ContactFormButton>
+            <CuStomBtn label='Send' width='99px' type="submit" />
 
-            {status && <SuccessMessage>{status}</SuccessMessage>}
+            {/* {status && <SuccessMessage>{status}</SuccessMessage>} */}
           </ContactFormContainer>
         </Form>
       )}
     </Formik>
   );
 };
-
-export default ContactForm;

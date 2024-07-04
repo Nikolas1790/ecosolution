@@ -7,6 +7,8 @@ import { FAQ } from "./FAQ/FAQ";
 import { Footer } from "./Footer/Footer";
 import { Header } from "./Header/Header";
 import { Main } from "./Main/Main";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export const App = () => {
   return (
@@ -21,6 +23,8 @@ export const App = () => {
         <ContactUs />
         <Footer />
       </DataContainer>
+
+      <ToastContainer autoClose={1500} />
     </MainContainer>
   );
 };

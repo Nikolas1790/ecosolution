@@ -1,36 +1,54 @@
 import styled from 'styled-components';
 import color from 'common/GlobalColors';
-import { Field } from 'formik';
+import { ErrorMessage, Field } from 'formik';
 
 export const ContactFormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  width: 320px;
+  height: 559px;
+  background: ${color.greyLight};
+  padding: 36px 12px;
+`;
+
+export const FormFieldBlock = styled.div`
+  position: relative;
+  width: 296px;
 `;
 
 export const ContactFormField = styled(Field)`
-  padding: 8px;
-  border: 1px solid ${color.greenPrimary};
-  border-radius: 4px;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 28px;
+  background: transparent;
+  padding-bottom: 8px;
+  width: 296px;
+  height: ${({ height}) => height || 'auto'};
+
+  border-bottom: 2px solid ${({ error }) => (error ? 'red' : color.greenLight)};
+  &:focus {
+    outline: none;
+    border-bottom-color: ${({ error }) => (error ? 'red' : color.greenLight)};
+  }
+  /* textarea {
+    padding-bottom: 0; 
+    resize: none; 
+    width: 100%;
+    min-height: ${({ height }) => height || 'auto'};
+    
+  } */
+`;
+export const ErrorMessageFormField = styled(ErrorMessage)`
+  position: absolute;
+  z-index: 1;
+  top: 36px;
+  right: 0px;
 `;
 
 export const ContactFormLabel = styled.label`
   font-size: 16px;
   font-weight: 400;
-`;
-
-export const ContactFormButton = styled.button`
-  padding: 8px 16px;
-  background-color: ${color.greenPrimary};
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:disabled {
-    background-color: ${color.greenLight};
-    cursor: not-allowed;
-  }
+  margin-bottom:8px;
 `;
 
 export const ErrorText = styled.div`

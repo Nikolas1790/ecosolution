@@ -1,7 +1,7 @@
 import { TitleSection } from "common/GiobalStyles";
 import { ConnectionBlock, ContactInf, ContactInfo, ContactItem, ContactUsSection, ContacttTitle, CotialSvgBlock } from "./ContactUs.styled";
 import sprite from '../../img/sprite.svg';
-import ContactForm from "components/ContactForm/ContactForm";
+import {ContactForm} from "components/ContactForm/ContactForm";
 
 export const ContactUs = () => {
   return (
