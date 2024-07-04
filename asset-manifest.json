@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecosolution/static/css/main.2e34b08b.css",
-    "main.js": "/ecosolution/static/js/main.eacaaca3.js",
+    "main.css": "/ecosolution/static/css/main.34c37de8.css",
+    "main.js": "/ecosolution/static/js/main.d295e648.js",
     "static/media/Private-Enterprise-“Bosch”.jpg": "/ecosolution/static/media/Private-Enterprise-“Bosch”.3a56cff3b695f17d72a9.jpg",
     "static/media/Private-Enterprise-“Biotech”.jpg": "/ecosolution/static/media/Private-Enterprise-“Biotech”.935c9650ca7600b57eef.jpg",
     "static/media/Zaporizhia-Private-Enterprise-“Biotech”.jpg": "/ecosolution/static/media/Zaporizhia-Private-Enterprise-“Biotech”.323645050cf86706a8f0.jpg",
@@ -14,11 +14,11 @@
     "static/media/slick.ttf": "/ecosolution/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ecosolution/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ecosolution/index.html",
-    "main.2e34b08b.css.map": "/ecosolution/static/css/main.2e34b08b.css.map",
-    "main.eacaaca3.js.map": "/ecosolution/static/js/main.eacaaca3.js.map"
+    "main.34c37de8.css.map": "/ecosolution/static/css/main.34c37de8.css.map",
+    "main.d295e648.js.map": "/ecosolution/static/js/main.d295e648.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e34b08b.css",
-    "static/js/main.eacaaca3.js"
+    "static/css/main.34c37de8.css",
+    "static/js/main.d295e648.js"
   ]
 }
