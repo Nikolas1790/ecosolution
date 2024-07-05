@@ -1,8 +1,7 @@
 import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
-
-export const FooterSection = styled.section`
+export const FooterSection = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 24px;

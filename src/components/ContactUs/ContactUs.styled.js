@@ -1,4 +1,3 @@
-// import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
 
@@ -10,35 +9,17 @@ export const ContactUsSection = styled.section`
   padding: 36px 0;
 `;
 
-
-
 export const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 100%;
-  /* max-width: 600px; */
 `;
 
 export const ContactItem = styled.div`
   /* padding: 16px; */
 
 `;
-
-// export const ConnectionBlockLink = styled.a`
-//   display: flex;
-//   align-items: center;
-//   gap: 8px;
-//   fill: transparent; 
-//   stroke: ${color.greenPrimary};
-
-//   transition: all 0.3s linear;
-//   &:hover {
-//       stroke: ${color.greenLight};
-//     }
-// `;
-
-
 
 export const ContacttTitle = styled.h4`
   font-family: Fira Sans;
@@ -60,8 +41,7 @@ export const ContactInf = styled.p`
 `;
 
 export const CotialSvgBlock = styled.div`
-display: flex;
-gap: 32px;
+  display: flex;
+  gap: 32px;
   padding: 12px;
-
 `;

@@ -9,7 +9,6 @@ export const AboutSection = styled.section`
   padding: 24px 0 36px 0;
 `;
 
-
 export const AboutAddressBlock = styled.div`
   display: flex;
   align-items: center;
@@ -21,15 +20,6 @@ export const AboutAddressBlock = styled.div`
 export const AboutAddress = styled.p`
   letter-spacing: -0.64px;
 `;
-
-
-// export const AboutTitle = styled.h3`
-//   font-size: 28px;
-//   font-weight: 400;
-//   line-height: 1;
-//   letter-spacing: 0px;
-//   text-transform: uppercase;
-// `;
 
 export const AboutText = styled.p`
 letter-spacing: -0.64px;

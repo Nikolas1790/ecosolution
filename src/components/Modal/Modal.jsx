@@ -11,7 +11,7 @@ export const Modal = ({ toggleModal }) => {
   const handleChapterClick = (sectionId) => {
     toggleModal(); 
     console.log(sectionId)
-    scrollToSection(sectionId); // Then scroll to section
+    scrollToSection(sectionId);
   };
 
   return (
@@ -25,16 +25,18 @@ export const Modal = ({ toggleModal }) => {
         </Close>
         <HorizontalLine component='burger'/>
 
-        <ChapterBlock>
-          {chapter.map((word, index) => (
-            <Chapter key={index} onClick={() => handleChapterClick(word.toLowerCase())} >
-              {word}
-              <svg width={16} height={16}>
-                <use href={`${sprite}#icon-arrow-right-top`} />
-              </svg>
-            </Chapter>
-          ))}
-        </ChapterBlock>
+        <nav>
+          <ChapterBlock>
+            {chapter.map((word, index) => (
+              <Chapter key={index} onClick={() => handleChapterClick(word.toLowerCase())} >
+                {word}
+                <svg width={16} height={16}>
+                  <use href={`${sprite}#icon-arrow-right-top`} />
+                </svg>
+              </Chapter>
+            ))}
+          </ChapterBlock>
+        </nav>
 
         <SotialContent>
           <FacebookLink component='burger'/>

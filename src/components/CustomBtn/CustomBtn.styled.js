@@ -1,4 +1,4 @@
-// import color from 'common/GlobalColors'
+import color from 'common/GlobalColors'
 import styled from 'styled-components'
 
 export const CuctomBtnGreen = styled.button`
@@ -9,7 +9,7 @@ export const CuctomBtnGreen = styled.button`
   width: ${({ width }) => width || '100%'};
   width: 141px;
   height: 39px;
-  border: 1px solid rgb(151, 210, 139);
+  border: 1px solid ${color.greenLight};
   border-radius: 500px;
   padding: 4px 4px 4px 16px;
 
@@ -18,7 +18,7 @@ export const CuctomBtnGreen = styled.button`
 
   transition: all 0.3s linear;
   &:hover  {
-    color: rgb(151, 210, 139);
-    background: rgb(23, 61, 51)
+    color: ${color.greenLight};
+    background: ${color.greenPrimary};
   }
 `;

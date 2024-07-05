@@ -1,7 +1,6 @@
 import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
-
 export const SliderWrapper = styled.div`
   .slick-slide {
     display: flex;
@@ -9,6 +8,7 @@ export const SliderWrapper = styled.div`
     align-items: center;
   }
 `;
+
 export const CardSvgBlock = styled.div`
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@ export const CardSvgBlock = styled.div`
   stroke: ${color.greenPrimary}; 
   fill: transparent;
 
-  transition: background 0.3s, stroke 0.3s; /* Добавьте переход к svg-блоку */
+  transition: background 0.3s, stroke 0.3s; 
 `; 
 export const Card = styled.div`
   width: 320px;
@@ -30,7 +30,7 @@ export const Card = styled.div`
   justify-content: center;
   align-items: center;
   background: ${color.greyLight};
-  /* border: 1px solid #ccc; */
+  cursor: pointer;
   flex-shrink: 0; /* Предотвращение сжатия карточек */
 
   transition: all 0.3s;
@@ -42,12 +42,10 @@ export const Card = styled.div`
 
     svg {
       stroke: ${color.greenLight};
-
-      transition-delay: 0.2s; /* Добавьте задержку для stroke svg */
+      transition-delay: 0.2s; 
     }
   }
 `;
-
 
 export const CardContentBlock = styled.div`
   padding: 24px 12px 12px 12px;
@@ -57,10 +55,7 @@ export const CardMainInfBlock = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 21px;
-
-
 `;
-
 
 export const CardTitle = styled.h4`
   font-family: Fira Sans;
@@ -71,8 +66,6 @@ export const CardTitle = styled.h4`
   width: 175px;
   height: 66px;
 `;
-
-
 
 export const CardSignature = styled.div`
   display: flex;

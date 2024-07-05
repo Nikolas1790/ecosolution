@@ -30,9 +30,8 @@ export const ContactFormField = styled(Field)`
     outline: none;
     border-bottom-color: ${({ error }) => (error ? 'red' : color.greenLight)};
   }
-
-
 `;
+
 export const ErrorMessageFormField = styled(ErrorMessage)`
   position: absolute;
   z-index: 1;

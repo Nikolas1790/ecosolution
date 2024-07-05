@@ -4,7 +4,6 @@ const color = {
   greenLight: 'rgb(151, 210, 139)',
   greyLight: 'rgb(234, 237, 241)',
   white: 'rgb(255, 255, 255)',
-
   whiteSemiTransparent: 'rgba(255, 255, 255, 0.25)'
 
 };

@@ -5,7 +5,7 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 6px;
-
+  cursor: pointer;
   &:hover h2 {
     color: ${color.greenLight};
   }
@@ -14,7 +14,7 @@ export const LogoContainer = styled.div`
 export const LogoSvg = styled.svg`
   width: 31px;
   height: 18px;
-  transform: translateY(1px); /* Опускает SVG на 5 пикселей вниз */
+  transform: translateY(1px);
 `;
 
 export const MainTitle = styled.h2`
@@ -33,7 +33,7 @@ export const MainText = styled.p`
   width: 60px;
   font-size: 10px;
   line-height: 0.9;
-  letter-spacing: -0.4px; // 10×0.04=0.4px
+  letter-spacing: -0.4px; 
   margin: 0;
 
 

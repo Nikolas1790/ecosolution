@@ -1,7 +1,6 @@
 import sprite from '../../img/sprite.svg';
 import {  CuctomBtnGreen } from './CustomBtn.styled';
 
-
 export default function CuStomBtn( {label, onClick, width }) {
   return (    
     <CuctomBtnGreen width={width} onClick={onClick}>

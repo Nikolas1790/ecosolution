@@ -1,7 +1,6 @@
 import React from 'react';
 import sprite from '../../img/sprite.svg';
 
-
 import lvivWindGenerator from '../../img/Slider/Private-Enterprise-“ZAKHIDNYI BUH”.jpg';
 import zhytomyrBoschGenerator from '../../img/Slider/Private-Enterprise-“Bosch”.jpg';
 import rivneGenerator from '../../img/Slider/Private-Enterprise-“Biotech”.jpg';
@@ -46,8 +45,6 @@ export const cardsData = [
     date: 'May 2021',
   },
 ];
-
-
 
 export const faqData = [
   {

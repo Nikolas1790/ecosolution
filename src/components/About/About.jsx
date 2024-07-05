@@ -1,6 +1,5 @@
 import { AboutAddress, AboutAddressBlock, AboutSection, AboutText } from "./About.styled";
 import windGenerator from '../../img/Main/main-mob.jpg';
-// import sprite from '../../img/sprite.svg';
 import { CompanyValues } from "../CompanyValues/CompanyValues";
 import { TitleSection } from "common/GiobalStyles";
 
@@ -20,8 +19,6 @@ export const About = () => {
       </div>
 
       <CompanyValues />
-
-
     </AboutSection>
   );
 };

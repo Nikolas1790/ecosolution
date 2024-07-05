@@ -2,7 +2,6 @@ import { HorizontalLine } from 'common/GiobalStyles';
 import sprite from '../../img/sprite.svg';
 import { GridContainer, GridItem, ContentWrapper, ContentTitle, ContentText } from "./CompanyValues.styled";
 
-
 export const CompanyValues = () => {
   return (
     <GridContainer>

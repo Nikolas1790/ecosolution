@@ -19,21 +19,15 @@ const schema = Yup.object({
   message: Yup.string(),
 });
 
-
-export const ContactForm = () => {
-  
+export const ContactForm = () => {  
   const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
-    try {
-      setTimeout(() => {
-        setStatus('Form submitted successfully');
-        setSubmitting(false);
-        
-        console.log(values);
-        toast.success( `The form on behalf of ${values.fullName} has been sent`);
-        resetForm();
-      }, 500);
+    try { 
+      setSubmitting(false);
+      toast.success( `The form on behalf of ${values.fullName} has been sent`);
+      resetForm();
     } catch (error) {
       toast.error("Registration failed. Please try again later.");
+      setSubmitting(false);
     }
   }
   return (

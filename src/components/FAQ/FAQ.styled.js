@@ -1,21 +1,17 @@
 import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
-
 export const FAQSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* padding: 36px 0; */
 `;
 
 export const AllQuestionsBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
 `;
-
 
 export const AnswersBlock = styled.div`
   display: flex;
