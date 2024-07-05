@@ -27,7 +27,6 @@ export const App = () => {
         
         <Footer />
       </DataContainer>
-
       <ToastContainer autoClose={1500} />
     </MainContainer>
   );
