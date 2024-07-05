@@ -12,7 +12,10 @@ export const CuctomBtnGreen = styled.button`
   border: 1px solid rgb(151, 210, 139);
   border-radius: 500px;
   padding: 4px 4px 4px 16px;
-margin-left: ${({ width }) => width==="99px" ? 'auto' : 'none'};
+
+  margin-left: ${({ width }) => width==="99px" ? 'auto' : 'none'};
+  margin-top: ${({ width }) => width==="99px" ? '16px' : 'none'};
+
   transition: all 0.3s linear;
   &:hover  {
     color: rgb(151, 210, 139);

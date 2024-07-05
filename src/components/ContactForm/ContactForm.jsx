@@ -66,10 +66,8 @@ export const ContactForm = () => {
             <ContactFormLabel htmlFor="message">Message</ContactFormLabel>
             <ContactFormField id="message" name="message" as="textarea" onChange={handleChange} value={values.message} placeholder="My message...." error="" height='146px' />
             
-
             <CuStomBtn label='Send' width='99px' type="submit" />
 
-            {/* {status && <SuccessMessage>{status}</SuccessMessage>} */}
           </ContactFormContainer>
         </Form>
       )}
