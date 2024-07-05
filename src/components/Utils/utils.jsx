@@ -78,19 +78,28 @@ export const faqData = [
   }
 ];
 
-export const InstagramLink = () => (
-  <ConnectionBlockLink href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+export const InstagramLink = ({ component }) => (
+  <ConnectionBlockLink href="https://instagram.com" target="_blank" rel="noopener noreferrer" component={component}>
     <svg width={24} height={24}>
       <use href={`${sprite}#icon-instagram`} />
     </svg>
   </ConnectionBlockLink>
 );
 
-export const FacebookLink = () => (
-  <ConnectionBlockLink href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+export const FacebookLink = ({ component }) => (
+  <ConnectionBlockLink href="https://facebook.com" target="_blank" rel="noopener noreferrer" component={component}>
     <svg width={24} height={24}>
       <use href={`${sprite}#icon-facebook`} />
     </svg>
   </ConnectionBlockLink>
 );
 
+export const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth'
+    });
+  }
+};

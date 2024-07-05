@@ -6,7 +6,7 @@ import { TitleSection } from "common/GiobalStyles";
 
 export const About = () => {
   return (
-    <AboutSection >
+    <AboutSection id="about" >
       <AboutAddressBlock>
         <AboutAddress>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</AboutAddress>
         <AboutAddress>office@ecosolution.com</AboutAddress>

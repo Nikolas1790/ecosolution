@@ -1,14 +1,17 @@
 import { Logo } from "components/Logo/Logo";
 import { FooterSection, LogoNavContainer, RequisitesContainer, SocialNetworkContainer, TopNavBtn } from "./Footer.styled";
 import sprite from '../../img/sprite.svg';
-import { FacebookLink, InstagramLink } from "components/Utils/utils";
+import { FacebookLink, InstagramLink, scrollToSection } from "components/Utils/utils";
 
 export const Footer = () => {
+  const handleLearnMoreClick = () => {
+    scrollToSection("main");
+  };
   return (
     <FooterSection >
       <LogoNavContainer>
         <Logo />
-        <TopNavBtn>
+        <TopNavBtn  onClick={handleLearnMoreClick} >
           <svg width={16} height={16}>
             <use href={`${sprite}#icon-arrow-top-nav`} />
           </svg>

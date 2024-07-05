@@ -104,8 +104,8 @@ textarea {
 export const HorizontalLine = styled.div`
   width: 100%;
   height: 1px;
-  background: ${color.greenLight};
-
+  /* background: ${color.greenLight}; */
+  background: ${({ component }) => component === 'burger' ? color.white : color.greenLight};
 `;
 
 export const TitleSection = styled.h2`
@@ -137,7 +137,10 @@ export const ConnectionBlockLink = styled.a`
   align-items: center;
   gap: 8px;
   fill: transparent; 
-  stroke: ${color.greenPrimary};
+  /* stroke: ${color.greenPrimary}; */
+
+  stroke: ${({ component }) => component === 'burger' ? color.white : color.greenPrimary};
+
 
   transition: all 0.3s linear;
   &:hover {

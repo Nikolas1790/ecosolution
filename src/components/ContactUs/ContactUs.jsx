@@ -6,7 +6,7 @@ import { FacebookLink, InstagramLink } from "components/Utils/utils";
 
 export const ContactUs = () => {
   return (
-    <ContactUsSection >
+    <ContactUsSection id="contact us" >
       <TitleSection>Contact us</TitleSection>
       <ContactInfo>
         <ContactItem>

@@ -1,7 +1,7 @@
 import { HorizontalLine, TitleSection } from "common/GiobalStyles";
 import { AddMinusSvg, AllQuestionsBlock, Answer, AnswersBlock, ContactUsBtn, FAQSection, QuestionBlock, QuestionTitle } from "./FAQ.styled";
 import React, { useState } from "react";
-import { faqData } from "components/Utils/utils";
+import { faqData, scrollToSection } from "components/Utils/utils";
 import sprite from '../../img/sprite.svg';
 
 export const FAQ = () => {
@@ -10,8 +10,12 @@ export const FAQ = () => {
   const handleToggle = (id) => {
     setActiveQuestion(prev => (prev === id ? null : id));
   };
+
+  const handleLearnMoreClick = () => {
+    scrollToSection("contact us");
+  };
   return (
-    <FAQSection >
+    <FAQSection id="faq"   >
       <TitleSection>Frequently Asked Questions</TitleSection>
       <AllQuestionsBlock>
         <AnswersBlock>
@@ -35,7 +39,7 @@ export const FAQ = () => {
         <QuestionTitle>Didn't find the answer to your question? </QuestionTitle>
 
 
-        <ContactUsBtn>
+        <ContactUsBtn onClick={handleLearnMoreClick}>
           Contact Us
           <svg width={14} height={14}>
             <use href={`${sprite}#icon-down`} />

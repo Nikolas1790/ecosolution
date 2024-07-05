@@ -10,8 +10,6 @@ export const BurgerButton = styled.button`
   cursor: pointer;
   padding: 0;
 
-
-
   :hover {
     background: rgb(151, 210, 139);
     
@@ -37,27 +35,18 @@ export const BurgerSvg = styled.svg`
   transition: background 0.3s linear;
 `;
 
-export const ModalContent = styled.div`
-  width: calc(100% - 40px);
-  height: calc(100% - 66px); /* 36px сверху + 30px снизу */
-  margin-top: 36px;
-  background: rgba(23, 61, 51, 0.75);
-  padding: 24px;
-  border-radius: 25px;
-  box-sizing: border-box;
-  overflow: auto;
-  position: relative;
+// export const ModalContent = styled.div`
+//   width: calc(100% - 40px);
+//   height: calc(100% - 66px); /* 36px сверху + 30px снизу */
+//   margin-top: 36px;
+//   background: rgba(23, 61, 51, 0.75);
+//   padding: 24px;
+//   border-radius: 25px;
+//   box-sizing: border-box;
+//   overflow: auto;
+//   position: relative;
   
-  /* background: rgba(23, 61, 51, 0.75);;
-  padding: 24px;
-  border-radius: 25px;
 
-
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-`;
+// `;
 
 
