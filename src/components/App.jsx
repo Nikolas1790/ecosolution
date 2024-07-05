@@ -1,3 +1,4 @@
+import { HorizontalLine } from "common/GiobalStyles";
 import { About } from "./About/About";
 import { DataContainer, MainContainer } from "./App.styled";
 import { Cases } from "./Cases/Cases";
@@ -21,6 +22,9 @@ export const App = () => {
         <Cases />
         <FAQ />
         <ContactUs />
+
+        <HorizontalLine />
+        
         <Footer />
       </DataContainer>
 

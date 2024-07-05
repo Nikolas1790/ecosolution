@@ -1,8 +1,13 @@
+import React from 'react';
+import sprite from '../../img/sprite.svg';
+
+
 import lvivWindGenerator from '../../img/Slider/Private-Enterprise-“ZAKHIDNYI BUH”.jpg';
 import zhytomyrBoschGenerator from '../../img/Slider/Private-Enterprise-“Bosch”.jpg';
 import rivneGenerator from '../../img/Slider/Private-Enterprise-“Biotech”.jpg';
 import khersonGenerator from '../../img/Slider/Private-Enterprise-“HealthyFarm”.jpg';
 import zaporizhiaBiotechGenerator from '../../img/Slider/Zaporizhia-Private-Enterprise-“Biotech”.jpg';
+import { ConnectionBlockLink } from 'common/GiobalStyles';
 
 export const cardsData = [
   {
@@ -72,3 +77,20 @@ export const faqData = [
     
   }
 ];
+
+export const InstagramLink = () => (
+  <ConnectionBlockLink href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <svg width={24} height={24}>
+      <use href={`${sprite}#icon-instagram`} />
+    </svg>
+  </ConnectionBlockLink>
+);
+
+export const FacebookLink = () => (
+  <ConnectionBlockLink href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <svg width={24} height={24}>
+      <use href={`${sprite}#icon-facebook`} />
+    </svg>
+  </ConnectionBlockLink>
+);
+

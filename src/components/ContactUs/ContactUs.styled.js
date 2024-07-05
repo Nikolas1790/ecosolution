@@ -1,4 +1,4 @@
-import color from 'common/GlobalColors';
+// import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
 
@@ -25,24 +25,20 @@ export const ContactItem = styled.div`
 
 `;
 
-export const ConnectionBlock = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  fill: transparent; 
-  stroke: ${color.greenPrimary};
+// export const ConnectionBlockLink = styled.a`
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+//   fill: transparent; 
+//   stroke: ${color.greenPrimary};
 
-  transition: all 0.3s linear;
-  &:hover {
-      stroke: ${color.greenLight};
-    }
-`;
-
-// export const SVGItem = styled.svg`
-//   width: 24px;
-//   height: 24px;
-
+//   transition: all 0.3s linear;
+//   &:hover {
+//       stroke: ${color.greenLight};
+//     }
 // `;
+
+
 
 export const ContacttTitle = styled.h4`
   font-family: Fira Sans;

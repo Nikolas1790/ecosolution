@@ -116,3 +116,31 @@ export const TitleSection = styled.h2`
   text-transform: uppercase;
   width: ${({ width }) => width || 'auto'};
 `;
+
+export const ConnectionBlock = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: transparent; 
+  stroke: ${color.greenPrimary};
+
+  transition: all 0.3s linear;
+  &:hover {
+      stroke: ${color.greenLight};
+    }
+`;
+
+
+
+export const ConnectionBlockLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: transparent; 
+  stroke: ${color.greenPrimary};
+
+  transition: all 0.3s linear;
+  &:hover {
+      stroke: ${color.greenLight};
+    }
+`;
