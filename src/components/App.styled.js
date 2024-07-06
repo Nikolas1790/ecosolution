@@ -5,17 +5,21 @@ export const MainContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100%; */
-  background: gray;
 `;
 
 export const DataContainer = styled.div`
-  width: 360px; //480px
-  background: white;
+  width: 100%;
   padding: 24px 20px;
   box-sizing: border-box;
-  color: rgb(23, 61, 51);
-  /* font-family: Fira Sans; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
+  max-width: 480px;
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+    padding: 40px 30px; 
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 40px 20px; 
+  } 
 `;

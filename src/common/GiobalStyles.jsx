@@ -34,6 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.19;
     letter-spacing: -0.64px;
     color: ${color.greenPrimary};
+    background: ${color.background};
     width: 100%;
     height: 100vh;
     margin: 0;  
@@ -109,6 +110,16 @@ export const TitleSection = styled.h2`
   letter-spacing: 0px;
   text-transform: uppercase;
   width: ${({ width }) => width || 'auto'};
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    width: 272px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 48px;
+    width: 365px;
+  } 
 `;
 
 export const ConnectionBlock = styled.a`

@@ -1,6 +1,8 @@
 import { scrollToSection } from "components/Utils/utils";
-import { HorizontalLine,  MainSection, MainText, MainTitle } from "./Main.styled";
-import CuStomBtn from "components/CustomBtn/CustomBtn";
+import { MainContextBlock, MainSection, MainText, MainTitle, TextBtnBlock } from "./Main.styled";
+import CuStomBtn from "components/Btns/CustomBtn/CustomBtn";
+import { HorizontalLine } from "common/GiobalStyles";
+import { Address } from "components/Address/Address";
 
 export const Main = () => {
   const handleLearnMoreClick = () => {
@@ -8,11 +10,16 @@ export const Main = () => {
   };
   return (
     <MainSection id="main" >
-      <MainTitle> RENEWABLE ENERGY FOR ANY TASK </MainTitle>
-      <MainText>Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass</MainText>
- 
-      <CuStomBtn label='Learn more' width='141px' onClick={handleLearnMoreClick} />
+      <MainContextBlock>
+        <MainTitle> RENEWABLE ENERGY FOR ANY TASK </MainTitle>
+        <TextBtnBlock>
+          <MainText>Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass</MainText>
+          <CuStomBtn label='Learn more' width='141px' onClick={handleLearnMoreClick} />
+        </TextBtnBlock>
+      </MainContextBlock>
+
       <HorizontalLine />
+      <Address />
     </MainSection>
   );
 };

@@ -1,4 +1,3 @@
-import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
 export const FAQSection = styled.section`
@@ -57,24 +56,9 @@ export const AddMinusSvg = styled.svg`
 
 `;
 
-
-export const ContactUsBtn = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  width: 130px;
-  height: 39px;
-  border-radius: 500px;
-  padding: 10px 16px;
-  background: ${color.greenLight};
-  margin-top: 12px;
-
-  transition: all 0.3s linear;
-  &:hover  {
-    color: ${color.greenLight};
-    background: ${color.greenPrimary};
-    fill: ${color.greenLight};
-    stroke: ${color.greenPrimary};
-  }
+export const QuestionToContact = styled.p`
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.72px;
+  margin-bottom: 12px;
 `;
