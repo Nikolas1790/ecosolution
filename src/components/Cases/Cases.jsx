@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {  TitleSection } from "common/GiobalStyles";
-import { Button, CasesSection, NavButtons, SlideInfo, SlideInfoSpan, UpperBlock } from "./Cases.styled";
+import { Button, CarouselBlock, CasesSection, CasesVerticalLine, NavButtons, SlideInfo, SlideInfoSpan, UpperBlock } from "./Cases.styled";
 import sprite from '../../img/sprite.svg';
 
 import { CasesSlideImg } from 'components/CasesSlidImg/CasesSlidImg';
@@ -13,12 +13,22 @@ export const Cases = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
+    // centerMode: true,
+    centerPadding: '24px', 
     afterChange: (current) => setCurrentSlide(current),
     responsive: [
       {
-        breakpoint: 480, // настройки для экранов меньше 768px
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerPadding: '24px' 
+        }
+      },
+      {
+        breakpoint: 767, // настройки для экранов меньше 768px
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -37,8 +47,9 @@ export const Cases = () => {
 
   return (
     <CasesSection id="cases" >
-      <TitleSection width='264px'>Successful cases of our company</TitleSection>
-      <div>
+      <CarouselBlock>
+        <TitleSection width='264px'>Successful cases of our company</TitleSection>
+
         <UpperBlock>
           <SlideInfo>
             {String(currentSlide + 1).padStart(2, '0')}
@@ -55,12 +66,12 @@ export const Cases = () => {
               <use href={`${sprite}#icon-arrow-right-slider`} />
             </svg>
             </Button>
-          </NavButtons>
+          </NavButtons>          
         </UpperBlock>
-        
-        <CasesSlideImg sliderRef ={sliderRef} settings={settings}/>
+        <CasesVerticalLine />
+      </CarouselBlock>
 
-      </div>
+      <CasesSlideImg sliderRef ={sliderRef} settings={settings}/>       
     </CasesSection>
   );
 };

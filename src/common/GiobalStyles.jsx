@@ -113,12 +113,12 @@ export const TitleSection = styled.h2`
 
   @media (min-width: 768px) {
     font-size: 36px;
-    width: 272px;
+    width: ${({ width }) => width || '272px'};
   }
 
   @media (min-width: 1280px) {
     font-size: 48px;
-    width: 365px;
+    width: ${({ width }) => width === '264px' ? '398px ' : '365px'};   
   } 
 `;
 

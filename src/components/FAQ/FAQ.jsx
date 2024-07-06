@@ -1,5 +1,5 @@
 import { HorizontalLine, TitleSection } from "common/GiobalStyles";
-import { AddMinusSvg, AllQuestionsBlock, Answer, AnswersBlock,  FAQSection, QuestionBlock, QuestionTitle, QuestionToContact } from "./FAQ.styled";
+import { AddMinusSvg, AllQuestionsBlock, Answer, AnswersBlock,  FAQSection, QuestionBlock, QuestionTitle, QuestionToContact, ToContactBlock } from "./FAQ.styled";
 import React, { useState } from "react";
 import { faqData, scrollToSection } from "components/Utils/utils";
 import sprite from '../../img/sprite.svg';
@@ -17,7 +17,7 @@ export const FAQ = () => {
   };
   return (
     <FAQSection id="faq"   >
-      <TitleSection>Frequently Asked Questions</TitleSection>
+      <TitleSection width='264px'>Frequently Asked Questions</TitleSection>
       <AllQuestionsBlock>
         <AnswersBlock>
           <HorizontalLine />
@@ -36,10 +36,11 @@ export const FAQ = () => {
             </React.Fragment>
           ))}
         </AnswersBlock>
-
-        <QuestionToContact>Didn't find the answer to your question? </QuestionToContact>
-
-        <LightGreenBtn label='Contact Us' width='130px' onClick={handleLearnMoreClick} />
+     
+        <ToContactBlock>
+          <QuestionToContact>Didn't find the answer to your question? </QuestionToContact>
+          <LightGreenBtn label='Contact Us' width='130px' onClick={handleLearnMoreClick} />
+        </ToContactBlock>
       </AllQuestionsBlock>
       
     </FAQSection>

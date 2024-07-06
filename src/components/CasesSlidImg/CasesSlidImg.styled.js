@@ -6,6 +6,10 @@ export const SliderWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: 768px) and (max-width: 1279px) {
+      gap: 24px; /* Задаем расстояние между карточками на планшетах */
+    }
+
   }
 `;
 
@@ -24,7 +28,7 @@ export const CardSvgBlock = styled.div`
   transition: background 0.3s, stroke 0.3s; 
 `; 
 export const Card = styled.div`
-  width: 320px;
+width: 320px;
   height: 318px;
   display: flex;
   justify-content: center;
@@ -32,10 +36,10 @@ export const Card = styled.div`
   background: ${color.greyLight};
   cursor: pointer;
   flex-shrink: 0; /* Предотвращение сжатия карточек */
+  outline: none;
 
   transition: all 0.3s;
   &:hover {
-
     ${CardSvgBlock} {
       background: ${color.greenPrimary};
     }
@@ -45,16 +49,40 @@ export const Card = styled.div`
       transition-delay: 0.2s; 
     }
   }
+
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    height: 322px;
+    max-width: 342px; /* Ширина для планшетов */
+    margin-right: 24px; /* Отступ между карточками на планшетах */
+  }
+
+  @media (min-width: 1280px) {
+    width: 596px; /* Ширина для десктопов */
+    height: 506px;
+  }
 `;
 
 export const CardContentBlock = styled.div`
   padding: 24px 12px 12px 12px;
+
+  @media (min-width: 1280px) {
+    padding: 36px 48px;
+  }
 `;
 
 export const CardMainInfBlock = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 21px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 36px;
+  }
 `;
 
 export const CardTitle = styled.h4`
@@ -65,6 +93,18 @@ export const CardTitle = styled.h4`
   letter-spacing: -0.72px;
   width: 175px;
   height: 66px;
+
+  @media (min-width: 768px)  {
+    font-size: 20px;
+    width: 200px;
+    height: 72px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    width: 357px;
+    height: 58px;
+  }
 `;
 
 export const CardSignature = styled.div`
@@ -77,4 +117,14 @@ export const CardSignature = styled.div`
   line-height: 1.16;
   letter-spacing: -0.48px;
   margin-top: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    margin-top: 24px;
+  }
 `;

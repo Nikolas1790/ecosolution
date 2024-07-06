@@ -11,7 +11,11 @@ export const DataContainer = styled.div`
   width: 100%;
   padding: 24px 20px;
   box-sizing: border-box;
-  max-width: 480px;
+  max-width: 100%;
+
+  @media (min-width: 480px) {
+    max-width: 480px;
+    }
 
   @media (min-width: 768px) {
     max-width: 768px;

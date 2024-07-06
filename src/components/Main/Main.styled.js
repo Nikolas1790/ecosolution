@@ -23,6 +23,7 @@ export const MainTitle = styled.h1`
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
+  width: 320px;
   
   @media (min-width: 768px) {
     font-size: 48px;
