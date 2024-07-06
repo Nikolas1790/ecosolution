@@ -19,12 +19,12 @@ export const AboutSection = styled.section`
   
   @media (min-width: 768px) {
     gap: 100px;
-    padding: 40px 0;
+    padding: 40px 0 100px;
   }
 
   @media (min-width: 1280px) {
     gap: 123px;
-    padding: 36px 0;
+    padding: 36px 0 120px;
   } 
 `;
 
