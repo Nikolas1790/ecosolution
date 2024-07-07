@@ -1,7 +1,8 @@
 import { Logo } from "components/Logo/Logo";
-import { FooterSection, LogoNavContainer, RequisitesContainer, SocialNetworkContainer, TopNavBtn } from "./Footer.styled";
+import { FooterSection, LogoNavContainer, SocialNetworkContainer, TopNavBtn } from "./Footer.styled";
 import sprite from '../../img/sprite.svg';
 import { FacebookLink, InstagramLink, scrollToSection } from "components/Utils/utils";
+import { Address } from "components/Address/Address";
 
 export const Footer = () => {
   const handleLearnMoreClick = () => {
@@ -22,12 +23,9 @@ export const Footer = () => {
         <FacebookLink />
         <InstagramLink />
       </SocialNetworkContainer>
-      
-      <RequisitesContainer>
-        <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
-        <p>office@ecosolution.com</p>
-        <p>ecosolution © 2023</p>
-      </RequisitesContainer>
+
+
+      <Address />
     </FooterSection>
   );
 };

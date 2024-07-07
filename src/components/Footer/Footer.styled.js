@@ -2,10 +2,16 @@ import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
 export const FooterSection = styled.footer`
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding-top: 24px;
+
+  @media (min-width: 768px) {
+    gap: 16px;
+    padding-top: 40px;
+  }
 `;
 
 export const LogoNavContainer = styled.div`
@@ -39,11 +45,15 @@ export const SocialNetworkContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 48px;
+    right: 286px;
+  }
+
+  @media (min-width: 1280px) {
+    right: 400px;
+  }
 `;
 
-export const RequisitesContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-`;
