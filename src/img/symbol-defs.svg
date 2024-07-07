@@ -1,14 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <symbol id="icon-global-edit" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M29.333 16C29.333 8.64 23.36 2.667 16 2.667S2.667 8.64 2.667 16 8.64 29.333 16 29.333"/>
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.667 4H12a37.898 37.898 0 0 0 0 24h-1.333M20 4a38.083 38.083 0 0 1 1.947 12"/>
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 21.333V20a38.083 38.083 0 0 0 12 1.947M4 11.999a37.898 37.898 0 0 1 24 0"/>
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="m25.613 20.987-4.72 4.72a1.64 1.64 0 0 0-.4.787l-.253 1.8c-.093.653.36 1.107 1.013 1.013l1.8-.253c.253-.04.613-.213.787-.4l4.72-4.72c.813-.813 1.2-1.76 0-2.96-1.187-1.187-2.133-.8-2.947.013z"/>
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M24.933 21.667c.4 1.44 1.52 2.56 2.96 2.96"/>
+    <symbol id="icon-map" viewBox="0 0 31 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.92" d="M2.931 10.598v12.454c0 2.432 1.728 3.43 3.827 2.227l3.008-1.715c.653-.371 1.741-.41 2.419-.064l6.72 3.366c.678.333 1.766.307 2.419-.064l5.542-3.174c.704-.41 1.293-1.408 1.293-2.227V8.947c0-2.432-1.728-3.43-3.827-2.227l-3.008 1.715c-.653.371-1.741.41-2.419.064l-6.72-3.354c-.678-.333-1.766-.307-2.419.064L4.224 8.383c-.717.41-1.293 1.408-1.293 2.214zm8.026-4.838V22.4m9.177-13.287v17.126"/>
     </symbol>
-    <symbol id="icon-maximize-circle" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.667 4H28v5.333M20 12l8-8M9.333 28H4v-5.333M12 20l-8 8M18.693 2.933A13.794 13.794 0 0 0 16 2.666c-7.36 0-13.333 5.973-13.333 13.333 0 .92.093 1.813.267 2.667m10.373 10.401c.867.173 1.773.267 2.693.267 7.36 0 13.333-5.973 13.333-13.333 0-.907-.093-1.8-.267-2.667"/>
+    <symbol id="icon-sms" viewBox="0 0 31 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.92" d="M21.76 26.88H8.96c-3.84 0-6.4-1.92-6.4-6.4v-8.96c0-4.48 2.56-6.4 6.4-6.4h12.8c3.84 0 6.4 1.92 6.4 6.4v8.96c0 4.48-2.56 6.4-6.4 6.4z"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.92" d="m21.76 12.16-4.006 3.2c-1.318 1.05-3.482 1.05-4.8 0l-3.994-3.2"/>
     </symbol>
   </defs>
 </svg>
