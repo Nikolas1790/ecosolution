@@ -18,13 +18,12 @@ export const LogoSvg = styled.svg`
 `;
 
 export const MainTitle = styled.h2`
-font-family: 'All Round Gothic Thick', sans-serif;
+  font-family: 'All Round Gothic Thick', sans-serif;
   font-size: 33px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -1.32px;
   margin: 0;
-
   transition: color 0.3s linear;
 `;
 
@@ -35,8 +34,6 @@ export const MainText = styled.p`
   line-height: 0.9;
   letter-spacing: -0.4px; 
   margin: 0;
-
-
   padding-top: 6px; 
 `;
 

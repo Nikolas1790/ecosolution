@@ -25,7 +25,6 @@ export const ContactFormContainer = styled.div`
 
 export const FormFieldBlock = styled.div`
   position: relative;
-  /* width: 296px; */
   margin-bottom: 28px;
 `;
 

@@ -13,12 +13,10 @@ export const AddressBlock = styled.div`
     flex-direction: row;
     margin-top: -8px;
   }
-
   @media (min-width: 1280px) {
     margin-top: -12px;
   } 
 `;
-
 
 export const Email = styled.p`
   @media (min-width: 768px) {

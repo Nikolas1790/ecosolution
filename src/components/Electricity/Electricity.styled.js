@@ -40,7 +40,6 @@ export const VerticalLine = styled.div`
   @media (min-width: 768px) {
     height: 87px;
   }
-
 `;
 
 export const KWT = styled.h4`
@@ -56,7 +55,6 @@ export const KWT = styled.h4`
     gap: 24px;
     font-size: 100px;
   }
-
   @media (min-width: 1280px) {
     gap: 24px;
     font-size: 164px;
@@ -72,7 +70,6 @@ export const KWTSpan = styled.span`
   @media (min-width: 768px) {
     font-size: 28px;
   }
-
   @media (min-width: 1280px) {
     font-size: 48px;
   }

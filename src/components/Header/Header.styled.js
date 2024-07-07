@@ -29,13 +29,11 @@ export const HeaderContent = styled.div`
     max-width: 768px;
     padding: 36px 30px; 
   }
-
   @media (min-width: 1280px) {
     max-width: 1280px;
     padding: 24px 20px; 
   } 
 `;
-
 
 export const HeaderNavContent = styled.div`
   display: flex;

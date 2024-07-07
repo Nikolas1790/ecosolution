@@ -17,8 +17,7 @@ export const FooterSection = styled.footer`
 export const LogoNavContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 `;
 
 export const TopNavBtn = styled.nav`
@@ -56,4 +55,3 @@ export const SocialNetworkContainer = styled.div`
     right: 400px;
   }
 `;
-

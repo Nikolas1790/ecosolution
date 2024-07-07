@@ -44,7 +44,6 @@ export const MainContextBlock = styled.div`
     flex-direction: row;
     gap: 145px;
   }
-
   @media (min-width: 1280px) {
     flex-direction: row;
     gap: 296px;
@@ -62,7 +61,6 @@ export const TextBtnBlock = styled.div`
     gap: 42px;
     width: 342px;
   }
-
   @media (min-width: 1280px) {
     gap: 20px;
     width: 363px;
@@ -75,48 +73,4 @@ export const MainText = styled.p`
   line-height: 1.19;
   letter-spacing: -0.63px;
   text-align: justify;
-
 `;
-
-
-
-// export const AddressBlock = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   flex-direction: column;
-//   gap: 8px;
-//   width: 100%;
-//   letter-spacing: -0.64px;
-
-//   @media (min-width: 768px) {
-//     flex-direction: row;
-//     margin-top: -8px;
-//   }
-
-//   @media (min-width: 1280px) {
-//     margin-top: -12px;
-//   } 
-// `;
-
-// export const Address = styled.p`
-// `;
-
-// export const Email = styled.p`
-//   @media (min-width: 768px) {
-//     margin-left: 28px;
-//   }
-//   @media (min-width: 1280px) {
-//     margin-left: 330px;
-//   } 
-  
-// `;
-
-// export const Copyright = styled.p`
-//   display: none;
-
-//   @media (min-width: 768px) {
-//     display: block;
-//   }
-// `;
-

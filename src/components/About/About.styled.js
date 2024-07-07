@@ -2,17 +2,14 @@ import color from 'common/GlobalColors';
 import styled from 'styled-components';
 
 export const AboutSection = styled.section`
-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   gap: 36px;
   padding: 36px 0;
-  
-  /* max-width: 440px; */
-  /* width: 100%; */
-
+ 
   picture {
     width: 100%;
     img {
@@ -24,7 +21,6 @@ width: 100%;
   @media (min-width: 768px) {
     gap: 100px;
     padding: 40px 0 100px;
-    /* width: 708px; */
   }
 
   @media (min-width: 1280px) {
@@ -72,12 +68,11 @@ export const VerticalLine = styled.div`
 
 
 export const AboutText = styled.p`
-  /* letter-spacing: -0.64px; */
   text-align: justify;
+  
   @media (min-width: 768px) {
     width: 342px;
   }
-
   @media (min-width: 1280px) {
     width: 459px;
   } 

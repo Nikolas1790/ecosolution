@@ -33,11 +33,6 @@ export const CarouselBlock = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    /* gap: 32px; */
-  }
-
-  @media (min-width: 1280px) {
-    /* gap: 115px; */
   }
 `;
 

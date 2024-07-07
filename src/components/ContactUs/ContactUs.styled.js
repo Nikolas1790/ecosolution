@@ -27,20 +27,7 @@ export const ContactContent = styled.div`
     flex-direction: row;
     justify-content: space-between;
   }
-  @media (min-width: 1280px) {
-    
-  }
 `;
-
-
-
-
-
-
-
-
-
-
 
 export const ContactInfo = styled.div`
   display: flex;
@@ -51,17 +38,12 @@ export const ContactInfo = styled.div`
   @media (min-width: 768px) {
     width: 244px;
   }
-
   @media (min-width: 1280px) {
     gap: 32px;
     width: 476px;
   }
 `;
 
-export const ContactItem = styled.div`
-  /* padding: 16px; */
-
-`;
 
 export const ContacttTitle = styled.h4`
   font-family: Fira Sans;
@@ -87,7 +69,6 @@ export const ContactInf = styled.p`
     font-size: 24px;
     width: 440px;
   }
-
 `;
 
 export const CotialSvgBlock = styled.div`

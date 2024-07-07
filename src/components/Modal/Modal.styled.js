@@ -13,7 +13,6 @@ export const ModalOverlay = styled.div`
   align-items: center;
 `;
 
-
 export const ModalContent = styled.div`
   width: calc(100% - 40px);
   height: calc(100% - 66px); 
@@ -32,7 +31,6 @@ export const ModalContent = styled.div`
     width: 320px;
     height: 701px; 
   }
-
   @media (min-width: 1280px) {
     top: -16px;
     right: 20px;
@@ -54,7 +52,6 @@ export const Close = styled.button`
     color: ${color.greenLight};
     stroke: ${color.greenLight};
   }
-
 
   @media (min-width: 1280px) {
     margin-bottom: 4px;

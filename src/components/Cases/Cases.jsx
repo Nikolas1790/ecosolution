@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {  TitleSection } from "common/GiobalStyles";
 import { Button, CarouselBlock, CasesSection, CasesVerticalLine, NavButtons, SlideInfo, SlideInfoSpan, UpperBlock } from "./Cases.styled";
 import sprite from '../../img/sprite.svg';
-
 import { CasesSlideImg } from 'components/CasesSlidImg/CasesSlidImg';
 
 export const Cases = () => {
@@ -15,7 +14,6 @@ export const Cases = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    // centerMode: true,
     centerPadding: '24px', 
     afterChange: (current) => setCurrentSlide(current),
     responsive: [
@@ -28,7 +26,7 @@ export const Cases = () => {
         }
       },
       {
-        breakpoint: 767, // настройки для экранов меньше 768px
+        breakpoint: 767, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

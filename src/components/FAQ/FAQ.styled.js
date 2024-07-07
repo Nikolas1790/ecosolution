@@ -1,16 +1,14 @@
 import styled from 'styled-components';
 
 export const FAQSection = styled.section`
-position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
 
-
   @media (min-width: 768px) {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    /* align-items: flex-start; */
   }
   @media (min-width: 1280px) {
     gap: 185px;
@@ -21,12 +19,6 @@ export const AllQuestionsBlock = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
-  @media (min-width: 768px) {
-
-    /* align-items: flex-start; */
-  }
 `;
 
 export const AnswersBlock = styled.div`
@@ -45,25 +37,6 @@ export const AnswersBlock = styled.div`
   }
 `;
 
-// export const Sidebar = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   gap: 24px;
-//   width: 100%;
-
-//   @media (min-width: 768px) {
-//     width: 35%;
-//     align-items: flex-start;
-//   }
-// `;
-
-
-
-
-
-
-
 export const QuestionBlock = styled.div`
   display: flex;
   flex-direction: column;
@@ -78,7 +51,6 @@ export const QuestionTitle = styled.p`
   letter-spacing: -0.72px;
   text-align: justify;
   cursor: pointer;
-
 
   @media (min-width: 1280px) {
     font-size: 24px;
@@ -122,9 +94,6 @@ export const AddMinusSvg = styled.svg`
     margin-right: 24px;
   }
 `;
-
-
-
 
 export const ToContactBlock = styled.div`
   display: flex;

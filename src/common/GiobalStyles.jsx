@@ -95,8 +95,6 @@ export const GlobalStyle = createGlobalStyle`
 }
 `;
 
-
-
 export const HorizontalLine = styled.div`
   width: 100%;
   height: 1px;
@@ -115,7 +113,6 @@ export const TitleSection = styled.h2`
     font-size: 36px;
     width: ${({ width }) => width || '272px'};
   }
-
   @media (min-width: 1280px) {
     font-size: 48px;
     width: ${({ width }) => width === '264px' ? '398px ' : '365px'};   
@@ -135,17 +132,12 @@ export const ConnectionBlock = styled.a`
     }
 `;
 
-
-
 export const ConnectionBlockLink = styled.a`
   display: flex;
   align-items: center;
   gap: 8px;
   fill: transparent; 
-  /* stroke: ${color.greenPrimary}; */
-
   stroke: ${({ component }) => component === 'burger' ? color.white : color.greenPrimary};
-
 
   transition: all 0.3s linear;
   &:hover {

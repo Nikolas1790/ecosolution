@@ -20,7 +20,7 @@ const schema = Yup.object({
 });
 
 export const ContactForm = () => {  
-  const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
+  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     try { 
       setSubmitting(false);
       toast.success( `The form on behalf of ${values.fullName} has been sent`);
@@ -36,7 +36,7 @@ export const ContactForm = () => {
       validationSchema={schema}
       onSubmit={handleSubmit}
     >
-      {({ isSubmitting, status, errors, touched, handleChange, values }) => (
+      {({ errors, touched, handleChange, values }) => (
         <Form>
           <ContactFormContainer>
             <ContactFormLabel htmlFor="fullName">*Full name:</ContactFormLabel>

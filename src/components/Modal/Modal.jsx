@@ -6,8 +6,6 @@ import { FacebookLink, InstagramLink, scrollToSection } from 'components/Utils/u
 const chapter = ["Main", "About", "Cases", "FAQ", "Contact Us" ];
 
 export const Modal = ({ toggleModal }) => {
-
-  // Close modal and scroll to section on menu item click
   const handleChapterClick = (sectionId) => {
     toggleModal(); 
     console.log(sectionId)

@@ -49,30 +49,9 @@ export const GridItem = styled.li`
   }
 `;
 
-export const ImageContainer = styled.picture`
-  display: none;
-
-  @media (min-width: 768px) {
-    display: block;
-
-    &:nth-child(3) {
-      grid-area: 1 / 3 / 1 / 5;
-    }
-
-    &:nth-child(4) {
-      grid-area: 2 / 1 / 3 / 3;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-`;
-
 export const ContentWrapper = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr; /* Иконка и контент */
+  grid-template-columns: auto 1fr;
   gap: 8px; 
   align-items: center; 
   fill: transparent;
@@ -82,7 +61,6 @@ export const ContentWrapper = styled.div`
   @media (min-width: 768px) {    
     margin-bottom: 51px;
   }
-
   @media (min-width: 1280px) {
     margin-bottom: 94px;
   }
@@ -92,12 +70,10 @@ export const ContentTitleSVG = styled.svg`
   width: 16px;
   height: 16px;
 
-
   @media (min-width: 1280px) {
     width: 24px;
-  height: 24px;
+    height: 24px;
   }
-
 `;
 
 export const ContentTitle = styled.h4`

@@ -9,7 +9,6 @@ import windGeneratorDesc from '../../img/Main/main-desctop.jpg';
 export const About = () => {
   return (
     <AboutSection id="about" >
-
       <picture>
         <source srcSet={windGeneratorDesc} media="(min-width: 1280px)" />
         <source srcSet={windGeneratorPlansh} media="(min-width: 768px)" />

@@ -24,7 +24,6 @@ export const Footer = () => {
         <InstagramLink />
       </SocialNetworkContainer>
 
-
       <Address />
     </FooterSection>
   );
