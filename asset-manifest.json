@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.34c37de8.css",
-    "main.js": "/ecosolution/static/js/main.46bc4ef0.js",
+    "main.js": "/ecosolution/static/js/main.50e3abe4.js",
     "static/media/main-desctop.jpg": "/ecosolution/static/media/main-desctop.b9c3e874a879a7a8c491.jpg",
     "static/media/CASaygonText-Regular.woff": "/ecosolution/static/media/CASaygonText-Regular.ce5d2358110e3d4ead27.woff",
     "static/media/CASaygonText-Regular.woff2": "/ecosolution/static/media/CASaygonText-Regular.a94735b1aeadddcbae56.woff2",
@@ -13,7 +13,7 @@
     "static/media/wind-generators-desct.jpg": "/ecosolution/static/media/wind-generators-desct.06f1db12b1dba156a029.jpg",
     "static/media/Private-Enterprise-“HealthyFarm”.jpg": "/ecosolution/static/media/Private-Enterprise-“HealthyFarm”.02761914d70c35d1820c.jpg",
     "static/media/solar-panels-desct.jpg": "/ecosolution/static/media/solar-panels-desct.270c2d64aebed7b10e9d.jpg",
-    "static/media/sprite.svg": "/ecosolution/static/media/sprite.9fe1d5d4e002c37f9d94025f6a46516d.svg",
+    "static/media/sprite.svg": "/ecosolution/static/media/sprite.6eeaede1d3e2d9bf8f570778cc93d610.svg",
     "static/media/main-mob.jpg": "/ecosolution/static/media/main-mob.585162c250a6aaa24577.jpg",
     "static/media/slick.svg": "/ecosolution/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/ecosolution/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -21,10 +21,10 @@
     "static/media/slick.woff": "/ecosolution/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ecosolution/index.html",
     "main.34c37de8.css.map": "/ecosolution/static/css/main.34c37de8.css.map",
-    "main.46bc4ef0.js.map": "/ecosolution/static/js/main.46bc4ef0.js.map"
+    "main.50e3abe4.js.map": "/ecosolution/static/js/main.50e3abe4.js.map"
   },
   "entrypoints": [
     "static/css/main.34c37de8.css",
-    "static/js/main.46bc4ef0.js"
+    "static/js/main.50e3abe4.js"
   ]
 }
