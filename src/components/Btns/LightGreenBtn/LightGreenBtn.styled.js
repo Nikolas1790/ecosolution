@@ -14,7 +14,8 @@ export const ContactUsBtn = styled.button`
   width: ${({ width }) => width || '100%'};
 
   transition: all 0.3s linear;
-  &:hover  {
+  &:hover,
+  &:focus   {
     color: ${color.greenLight};
     background: ${color.greenPrimary};
     fill: ${color.greenLight};

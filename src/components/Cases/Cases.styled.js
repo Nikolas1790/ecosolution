@@ -97,7 +97,8 @@ export const Button = styled.button`
   stroke: ${color.greenPrimary};
 
   transition: stroke 0.3s linear;
-  &:hover {
+    &:hover,
+  &:focus  {
     stroke: ${color.greenLight}; 
   }
 `;

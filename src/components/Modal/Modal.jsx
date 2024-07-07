@@ -8,7 +8,6 @@ const chapter = ["Main", "About", "Cases", "FAQ", "Contact Us" ];
 export const Modal = ({ toggleModal }) => {
   const handleChapterClick = (sectionId) => {
     toggleModal(); 
-    console.log(sectionId)
     scrollToSection(sectionId);
   };
 

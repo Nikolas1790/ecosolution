@@ -17,7 +17,8 @@ export const CuctomBtnGreen = styled.button`
   margin-top: ${({ width }) => width==="99px" ? '16px' : 'none'};
 
   transition: all 0.3s linear;
-  &:hover  {
+  &:hover,
+  &:focus  {
     color: ${color.greenLight};
     background: ${color.greenPrimary};
   }

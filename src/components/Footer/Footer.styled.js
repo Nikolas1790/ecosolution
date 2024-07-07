@@ -33,7 +33,8 @@ export const TopNavBtn = styled.nav`
   stroke: ${color.greenPrimary};
   
   transition: all 0.3s linear;
-  &:hover{
+    &:hover,
+  &:focus {
     background: ${color.greenPrimary};
     stroke: ${color.greenLight};;
   }

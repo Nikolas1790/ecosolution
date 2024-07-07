@@ -92,11 +92,13 @@ export const FacebookLink = ({ component }) => (
 );
 
 export const scrollToSection = (sectionId) => {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    window.scrollTo({
-      top: section.offsetTop,
-      behavior: 'smooth'
-    });
-  }
+  const element = document.getElementById(sectionId);
+  const headerOffset = 70; 
+  const elementPosition = element.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth'
+  });
 };
