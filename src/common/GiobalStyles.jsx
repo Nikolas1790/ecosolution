@@ -5,17 +5,10 @@ import CASaygonTextWoff from '../fonts/CASaygonText-Regular.woff';
 import CASaygonTextWoff2 from '../fonts/CASaygonText-Regular.woff2';
 
 export const GlobalStyle = createGlobalStyle`
-  @font-face {
+  /* @font-face {
     font-family: 'All Round Gothic Thick';
     src: url('/path/to/fonts/FONTSPRING_DEMO-AllRoundGothicThick.ttf') format('truetype');
     font-weight: 500;
-    font-style: normal;
-  }
-
-  /* @font-face {
-    font-family: 'CA Saygon Text';
-    src: url('/path/to/fonts/CA_Saygon_Text-Regular.ttf') format('truetype'); 
-    font-weight: 400;
     font-style: normal;
   } */
 
