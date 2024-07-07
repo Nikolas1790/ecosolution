@@ -41,8 +41,7 @@ export const FAQ = () => {
           <QuestionToContact>Didn't find the answer to your question? </QuestionToContact>
           <LightGreenBtn label='Contact Us' width='130px' onClick={handleLearnMoreClick} />
         </ToContactBlock>
-      </AllQuestionsBlock>
-      
+      </AllQuestionsBlock>      
     </FAQSection>
   );
 };
