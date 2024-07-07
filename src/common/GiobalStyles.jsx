@@ -1,6 +1,9 @@
 import { createGlobalStyle, styled } from 'styled-components';
 import color from './GlobalColors';
 
+import CASaygonTextWoff from '../fonts/CASaygonText-Regular.woff';
+import CASaygonTextWoff2 from '../fonts/CASaygonText-Regular.woff2';
+
 export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'All Round Gothic Thick';
@@ -9,12 +12,20 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
-  @font-face {
+  /* @font-face {
     font-family: 'CA Saygon Text';
     src: url('/path/to/fonts/CA_Saygon_Text-Regular.ttf') format('truetype'); 
     font-weight: 400;
     font-style: normal;
-  }
+  } */
+
+  @font-face {
+  font-family: 'CA Saygon Text';
+  font-style: normal;
+  font-weight: 400; 
+  src: url(${CASaygonTextWoff2}) format('woff2'), url(${CASaygonTextWoff}) format('woff');
+}
+
 
   *,
   *::before,
@@ -25,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: "Fira Sans", "Oswald", -apple-system, BlinkMacSystemFont, 
+    font-family: "Fira Sans", "Oswald", 'CA Saygon Text','All Round Gothic Thick', -apple-system, BlinkMacSystemFont, 
   			"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
   			"Helvetica Neue", sans-serif;
     font-size: 16px;
