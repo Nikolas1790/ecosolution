@@ -3,7 +3,9 @@ import sprite from '../../img/sprite.svg';
 import { GridContainer, GridItem, ContentWrapper, ContentTitle, ContentText, ImageContainer, ContentTitleSVG } from "./CompanyValues.styled";
 
 import solarPanelsPlansh from '../../img/About/solar-panels-planshet.jpg';
+import solarPanelsDesct from '../../img/About/solar-panels-desct.jpg';
 import windGeneratorPlansh from '../../img/About/wind-generators-planshet.jpg';
+import windGeneratorDesct from '../../img/About/wind-generators-desct.jpg';
 
 export const CompanyValues = () => {
   return (
@@ -13,7 +15,7 @@ export const CompanyValues = () => {
         <div>
         <ContentWrapper>
           <ContentTitleSVG >
-            <use href={`${sprite}#icon-cpu-charge`} />
+            <use href={`${sprite}#icon-maximize-circle`} />
           </ContentTitleSVG>
           <ContentTitle>Openness</ContentTitle>
         </ContentWrapper>
@@ -37,10 +39,14 @@ export const CompanyValues = () => {
       </GridItem>
 
       <ImageContainer >
+        <source srcSet={windGeneratorDesct} media="(min-width: 1280px)" />
+        <source srcSet={windGeneratorPlansh} media="(min-width: 768px)" />
         <img src={windGeneratorPlansh} alt="wind generator" />
       </ImageContainer>
       <ImageContainer >
-        <img src={solarPanelsPlansh} alt="solar panels" />
+        <source srcSet={solarPanelsDesct} media="(min-width: 1280px)" />
+        <source srcSet={solarPanelsPlansh} media="(min-width: 768px)" />
+        <img src={solarPanelsPlansh} alt="wind generator" />
       </ImageContainer>
 
       <GridItem>

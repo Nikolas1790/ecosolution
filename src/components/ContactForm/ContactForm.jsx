@@ -14,8 +14,8 @@ const initialValues = {
 
 const schema = Yup.object({
   fullName: Yup.string().required('Wrong Fullname'),
-  email: Yup.string().matches(/^\w+([.-]?\w+)*@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'Invalid email address').required('Wrong Email'),
-  phone: Yup.string().matches(/^\d{12}$/, 'Phone number must be exactly 12 digits').required('Wrong Phone'),
+  email: Yup.string().matches(/^\w+([.-]?\w+)*@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'Wrong Email').required('Wrong Email'),
+  phone: Yup.string().matches(/^\d{12}$/, 'Wrong Phone').required('Wrong Phone'),
   message: Yup.string(),
 });
 

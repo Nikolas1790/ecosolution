@@ -25,30 +25,31 @@ export const GridItem = styled.li`
   padding: 12px;
 
 
-  @media (min-width: 768px) {    
-  &:nth-child(1){
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  &:nth-child(2) {
-    grid-area: 1 / 2 / 2 / 3;
-  }
+  @media (min-width: 768px) {  
+    height: 197px;
 
+    &:nth-child(1){
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    &:nth-child(2) {
+      grid-area: 1 / 2 / 2 / 3;
+    }
 
-  &:nth-child(5) {
-    grid-area: 2 / 3 / 2 / 3;
-  }
-  &:nth-child(6){
-    grid-area: 2 / 4 / 4 / 4;
-  }
+    &:nth-child(5) {
+      grid-area: 2 / 3 / 2 / 3;
+    }
+    &:nth-child(6){
+      grid-area: 2 / 4 / 4 / 4;
+    }
   }
 
   @media (min-width: 1280px) {
     height: 340px;
     padding: 48px 24px;
   }
-
 `;
-export const ImageContainer = styled.div`
+
+export const ImageContainer = styled.picture`
   display: none;
 
   @media (min-width: 768px) {
@@ -68,8 +69,6 @@ export const ImageContainer = styled.div`
     }
   }
 `;
-
-
 
 export const ContentWrapper = styled.div`
   display: grid;
@@ -110,11 +109,9 @@ export const ContentTitle = styled.h4`
   @media (min-width: 768px) {    
     font-size: 18px;
   }
-
   @media (min-width: 1280px) {
     font-size: 32px;
   }
-
 `;
 
 export const ContentText = styled.p`
