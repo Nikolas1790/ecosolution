@@ -9,11 +9,23 @@ export const ContactFormContainer = styled.div`
   height: 559px;
   background: ${color.greyLight};
   padding: 36px 12px;
+
+
+  @media (min-width: 768px) {
+    width: 342px;
+    height: 559px;
+    padding: 36px 24px;
+  }
+  @media (min-width: 1280px) {
+    width: 596px;
+    height: 623px;
+    padding: 48px;
+  }
 `;
 
 export const FormFieldBlock = styled.div`
   position: relative;
-  width: 296px;
+  /* width: 296px; */
   margin-bottom: 28px;
 `;
 
@@ -30,6 +42,11 @@ export const ContactFormField = styled(Field)`
     outline: none;
     border-bottom-color: ${({ error }) => (error ? 'red' : color.greenLight)};
   }
+
+  @media (min-width: 1280px) {
+    font-size: 20px;
+    width: 500px;
+  }
 `;
 
 export const ErrorMessageFormField = styled(ErrorMessage)`
@@ -43,6 +60,10 @@ export const ContactFormLabel = styled.label`
   font-size: 16px;
   font-weight: 400;
   margin-bottom:8px;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 12px;
+  }
 `;
 
 export const ErrorText = styled.div`

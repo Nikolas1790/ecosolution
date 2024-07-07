@@ -21,4 +21,8 @@ export const CuctomBtnGreen = styled.button`
     color: ${color.greenLight};
     background: ${color.greenPrimary};
   }
+
+  @media (min-width: 1280px) {
+    margin-top: ${({ width }) => width==="99px" ? '34px' : 'none'};
+  }
 `;
