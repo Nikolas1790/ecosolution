@@ -13,22 +13,10 @@ export const ModalOverlay = styled.div`
   align-items: center;
 `;
 
-export const ModalWrapper = styled.div`
-    width: calc(100% - 40px);
-  height: calc(100% - 66px); /* 36px сверху + 30px снизу */
-  margin-top: 36px;
-  background: rgba(23, 61, 51, 0.75);
-  padding: 24px;
-  border-radius: 25px;
-  box-sizing: border-box;
-  overflow: auto;
-  position: relative;
-`;
-
 
 export const ModalContent = styled.div`
   width: calc(100% - 40px);
-  height: calc(100% - 66px); /* 36px сверху + 30px снизу */
+  height: calc(100% - 66px); 
   margin-top: 36px;
   background: rgba(23, 61, 51, 0.75);
   padding: 24px;
@@ -37,15 +25,28 @@ export const ModalContent = styled.div`
   overflow: auto;
   position: relative;
   
+  @media (min-width: 768px) {    
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    width: 320px;
+    height: 701px; 
+  }
 
+  @media (min-width: 1280px) {
+    top: -16px;
+    right: 20px;
+    width: 365px;
+    height: 873px; 
+  }
 `;
 
 export const Close = styled.button`
   display: flex;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.19;
   color: ${color.white};
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   stroke: ${color.white};
 
   transition: all 0.3s linear;
@@ -54,19 +55,29 @@ export const Close = styled.button`
     stroke: ${color.greenLight};
   }
 
+
+  @media (min-width: 1280px) {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
 `;
 
 export const ChapterBlock = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 16px;
+  margin-top: 24px;
+
+  @media (min-width: 1280px) {
+    margin-top: 16px;
+  }
 `;
 
 export const Chapter = styled.li`
   display: flex;
+  align-items: center;
   gap: 8px;
-  font-size: 18px;
+  font-size: 24px;
   color: ${color.whiteSemiTransparent};
   
   fill: transparent;

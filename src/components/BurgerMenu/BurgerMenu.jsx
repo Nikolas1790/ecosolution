@@ -7,6 +7,7 @@ export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleModal = () => {
+    document.body.classList.toggle('modal-open');
     setIsOpen(!isOpen);
   };
 

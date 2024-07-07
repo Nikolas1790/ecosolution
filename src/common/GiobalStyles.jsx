@@ -89,6 +89,10 @@ export const GlobalStyle = createGlobalStyle`
   textarea {
     resize: none; 
   } 
+
+  body.modal-open {
+  overflow: hidden;
+}
 `;
 
 
