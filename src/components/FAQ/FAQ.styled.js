@@ -40,6 +40,7 @@ export const AnswersBlock = styled.div`
     width: 342px;
   }
   @media (min-width: 1280px) {
+    gap: 24px;
     width: 596px;
   }
 `;
@@ -93,9 +94,12 @@ export const Answer = styled.p`
 
   margin-top: 16px;
   padding-left: 24px;
-
+  @media (min-width: 768px) {
+    padding-left: 44px;
+  }
   @media (min-width: 1280px) {
     font-size: 18px;
+    padding-left: 52px;
   }
 `;
 
@@ -107,6 +111,16 @@ export const AddMinusSvg = styled.svg`
   align-items: center;
   justify-content: center;
 
+  @media (min-width: 768px) {
+    min-width: 28px;
+    height: 28px;
+    margin-right: 16px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    margin-right: 24px;
+  }
 `;
 
 
