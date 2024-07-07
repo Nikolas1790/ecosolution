@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.34c37de8.css",
-    "main.js": "/ecosolution/static/js/main.d7ef2a39.js",
+    "main.js": "/ecosolution/static/js/main.0c8038d6.js",
     "static/media/main-desctop.jpg": "/ecosolution/static/media/main-desctop.b9c3e874a879a7a8c491.jpg",
     "static/media/CASaygonText-Regular.woff": "/ecosolution/static/media/CASaygonText-Regular.ce5d2358110e3d4ead27.woff",
     "static/media/CASaygonText-Regular.woff2": "/ecosolution/static/media/CASaygonText-Regular.a94735b1aeadddcbae56.woff2",
@@ -21,10 +21,10 @@
     "static/media/slick.woff": "/ecosolution/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ecosolution/index.html",
     "main.34c37de8.css.map": "/ecosolution/static/css/main.34c37de8.css.map",
-    "main.d7ef2a39.js.map": "/ecosolution/static/js/main.d7ef2a39.js.map"
+    "main.0c8038d6.js.map": "/ecosolution/static/js/main.0c8038d6.js.map"
   },
   "entrypoints": [
     "static/css/main.34c37de8.css",
-    "static/js/main.d7ef2a39.js"
+    "static/js/main.0c8038d6.js"
   ]
 }
